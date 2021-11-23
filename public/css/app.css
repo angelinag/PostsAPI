@@ -1,0 +1,39 @@
+body{
+    background-color: #eee;
+}
+
+.post {
+    background-color: #fff;
+    margin: 30px;
+    padding: 20px 30px;
+}
+
+.post:hover {
+    -webkit-transform: scale(1.2);
+    transition-duration: 0.7s;
+    color: #177;
+}
+
+.post a:hover {
+    text-decoration: none;
+    color: #177;
+}
+
+.nav-pagination {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.nav-pagination a:hover {
+    color: #000;
+    -webkit-transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+
+.nav-pagination a:visited {
+    color: #000;
+}
+
+.selected{
+    font-weight: 800;
+}
