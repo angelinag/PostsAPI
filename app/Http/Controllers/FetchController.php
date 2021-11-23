@@ -10,8 +10,12 @@ class FetchController extends Controller
 {
     public function showAll(Request $request)
     {
-        $pageNumber = $request->page;
-        if(! $request->page) $page = 1;
+        if($request->page == false)
+            $pageNumber = 1;
+        else
+        {
+            $pageNumber = $request->page;
+        }
 
         $route = getenv('FETCH_URL');
         $fetchSize = getenv('FETCH_SIZE');
